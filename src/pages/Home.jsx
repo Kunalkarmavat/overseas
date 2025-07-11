@@ -31,13 +31,27 @@ const Home = () => {
 
 
       {/* Story Timeline */}
-      <section className="bg-gray-100 py-20 px-6">
+      <section className="py-12 sm:py-20 sm:px-6 px-8 bg-gray-100 ">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-bold text-purple-800 mb-8">Story of SS Overseas Education</h2>
+
+        
+              
+      <h1 className="text-4xl m-auto  font-plein sm:w-10/12 lg:text-5xl font-bold leading-tight mb-6 text-darkPurple">
+        Our Journey
+      </h1>
+
+      <p className="text-black  m-auto text-base mb-16 leading-relaxed w-full sm:w-1/2">
+        Everything you need to plan, apply, and succeed in your study abroad journey.
+      </p>
+
+       
+          <h2 className="text-3xl font-bold text-purple-800 mb-8"></h2>
           <div className="text-left space-y-8">
             <div>
               <h3 className="text-xl font-semibold">Started in 2015</h3>
               <p>Helping Indian students reach USA, UK, Canada, and Australia. First 50 students successfully placed.</p>
+
+
             </div>
             <div>
               <h3 className="text-xl font-semibold">Now in 2024</h3>

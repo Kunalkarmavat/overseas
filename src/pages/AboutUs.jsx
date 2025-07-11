@@ -147,19 +147,19 @@ export default function About() {
   ];
 
   return (
-    <div className="min-h-screen bg-gray-50 ">
+    <div className="min-h-screen bg-gray-50  ">
 
       {/* Hero Section */}
       <section className=" bg-primary text-white py-20">
-        <div className="container-padding">
+        <div className="container-padding py-12 sm:py-20 sm:px-6 px-8">
           <div className="text-center max-w-4xl mx-auto">
           
-            <h1 className="text-5xl lg:text-6xl font-bold mb-6">
+            <h1 className="text-3xl lg:text-6xl font-bold mb-6">
               Empowering Dreams Through
               <br />
               <span className="text-yellow-300">Global Education</span>
             </h1>
-            <p className="text-xl text-teal-100 mb-8 leading-relaxed">
+            <p className="text-sm sm:text-xl text-teal-100 mb-8 leading-relaxed">
               For over a decade, we've been connecting ambitious learners with
               world-class educational opportunities. Our mission is to make
               international education accessible, affordable, and achievable for
@@ -206,7 +206,7 @@ export default function About() {
       </section>
 
       {/* Mission & Story */}
-      <section className="py-20 px-20 bg-gray-50">
+      <section className="py-12 sm:py-20 sm:px-6 px-8 bg-gray-50">
         <div className="container-padding">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
@@ -267,7 +267,7 @@ export default function About() {
       </section>
 
       {/* Values */}
-      <section className="py-20 px-20 bg-white">
+      <section className="py-12 sm:py-20 sm:px-6 px-8 bg-white">
         <div className="container-padding">
           <div className="text-center mb-16">
             <Badge className="mb-4 bg-yellow-100 text-yellow-800">
@@ -309,7 +309,7 @@ export default function About() {
       </section>
 
       {/* Team */}
-      <section className="py-20 px-20">
+      <section className="py-12 sm:py-20 sm:px-6 px-8">
         <div className="container-padding">
           <div className="text-center mb-16">
             <Badge className="mb-4 bg-teal-100 text-teal-800">Our Team</Badge>
@@ -355,7 +355,7 @@ export default function About() {
       </section>
 
       {/* Timeline */}
-      <section className="py-20 bg-white">
+      <section className="py-12 sm:py-20 sm:px-6 px-8 bg-white">
         <div className="container-padding">
           <div className="text-center mb-16">
             <Badge className="mb-4 bg-purple-100 text-purple-800">
@@ -410,12 +410,12 @@ export default function About() {
       </section>
 
       {/* Contact CTA */}
-      <section className="py-20 bg-gradient-to-br from-primary to-primary text-white">
+      <section className="py-12 sm:py-20 sm:px-6 px-8 bg-gradient-to-br from-primary to-primary text-white">
         <div className="container-padding text-center">
-          <h2 className="text-4xl font-bold mb-6">
+          <h2 className="text-3xl sm:text-4xl font-bold mb-6">
             Ready to Start Your Journey?
           </h2>
-          <p className="text-xl text-teal-100 mb-8 max-w-2xl mx-auto">
+          <p className="text-sm sm:text-xl text-teal-100 mb-8 max-w-2xl mx-auto">
             Join thousands of students who have achieved their dreams with
             Zisaa. Let's work together to make your educational aspirations a
             reality.

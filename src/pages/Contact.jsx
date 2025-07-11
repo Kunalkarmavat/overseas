@@ -24,70 +24,6 @@ import {
 import { Link } from "react-router-dom";
 import { useState } from "react";
 
-const Header = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  return (
-    <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-border shadow-sm">
-      <div className="container-padding">
-        <div className="flex items-center justify-between h-16">
-          <Link to="/" className="flex items-center space-x-3">
-            <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-sm">Z</span>
-            </div>
-            <span className="text-xl font-bold text-primary">Zisaa</span>
-          </Link>
-
-          <nav className="hidden md:flex items-center space-x-8">
-            <Link
-              to="/"
-              className="text-gray-600 hover:text-primary transition-colors"
-            >
-              Home
-            </Link>
-            <Link
-              to="/services"
-              className="text-gray-600 hover:text-primary transition-colors"
-            >
-              Services
-            </Link>
-            <Link
-              to="/courses"
-              className="text-gray-600 hover:text-primary transition-colors"
-            >
-              Courses
-            </Link>
-            <Link
-              to="/universities"
-              className="text-gray-600 hover:text-primary transition-colors"
-            >
-              Universities
-            </Link>
-            <Link
-              to="/about"
-              className="text-gray-600 hover:text-primary transition-colors"
-            >
-              About Us
-            </Link>
-            <Link
-              to="/contact"
-              className="text-primary font-semibold border-b-2 border-primary pb-1"
-            >
-              Contact
-            </Link>
-          </nav>
-
-          <Button
-            size="sm"
-            className="bg-yellow-400 hover:bg-yellow-500 text-black font-semibold px-6 py-2 rounded-full"
-          >
-            Log In
-          </Button>
-        </div>
-      </div>
-    </header>
-  );
-};
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -209,18 +145,18 @@ export default function Contact() {
     <div className="min-h-screen bg-gray-50">
 
       {/* Hero Section */}
-      <section className=" bg-primary  text-white py-20">
+      <section className=" bg-primary py-12 sm:py-20 sm:px-6 px-8  text-white py-20">
         <div className="container-padding">
           <div className="text-center max-w-4xl mx-auto">
             {/* <Badge className="mb-6 bg-yellow-400 text-black px-4 py-2">
               Get In Touch
             </Badge> */}
-            <h1 className="text-5xl lg:text-6xl font-bold mb-6">
+            <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold mb-6">
               We're Here to
               <br />
               <span className="text-yellow-300">Help You Succeed</span>
             </h1>
-            <p className="text-xl text-teal-100 mb-8 leading-relaxed">
+            <p className="text-sm sm:text-xl text-teal-100 mb-8 leading-relaxed">
               Have questions about our services? Need guidance on your
               educational journey? Our expert team is ready to provide
               personalized support and answers to all your inquiries.
@@ -247,7 +183,7 @@ export default function Contact() {
       </section>
 
       {/* Contact Methods */}
-      <section className="py-16 px-20 bg-white">
+      <section className="py-12 sm:py-20 sm:px-6 px-8 bg-white">
         <div className="container-padding">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">
@@ -289,7 +225,7 @@ export default function Contact() {
       </section>
 
       {/* Contact Form & Office Info */}
-      <section className="py-20 px-20">
+      <section className="py-12 sm:py-20 sm:px-6 px-8">
         <div className="container-padding">
           <div className="grid lg:grid-cols-2 gap-16">
             {/* Contact Form */}
@@ -499,7 +435,7 @@ export default function Contact() {
 
    
       {/* Emergency Support Banner */}
-      <section className="py-12 bg-gradient-to-r from-red-500 to-red-600 text-white">
+      <section className="py-12 sm:py-20 sm:px-6 px-8 bg-gradient-to-r from-red-500 to-red-600 text-white">
         <div className="container-padding text-center">
           <h3 className="text-2xl font-bold mb-4">
             Need Immediate Assistance?

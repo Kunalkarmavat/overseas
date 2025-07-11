@@ -36,9 +36,9 @@ const OfferedCountriesSection = () => {
   const scrollingCountries = [...countries, ...countries];
 
   return (
-    <section className="py-20 px-6 text-center overflow-hidden flex flex-col items-center justify-center">
+    <section className="py-12 sm:py-20 sm:px-6 px-8 text-center overflow-hidden flex flex-col items-center justify-center">
 
-<h1 className="font-plein text-4xl w-0   sm:w-3/4 lg:text-5xl font-bold leading-tight mb-6 text-darkPurple ">
+<h1 className="font-plein text-4xl    sm:w-3/4 lg:text-5xl font-bold leading-tight mb-6 text-darkPurple ">
 Countries We Offer
             </h1>
    

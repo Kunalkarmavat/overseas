@@ -29,7 +29,7 @@ const Header = () => {
 
   return (
     <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-border shadow-sm">
-      <div className="container-padding">
+      <div className="container-padding ">
         <div className="flex items-center justify-between h-16">
           <Link to="/" className="flex items-center space-x-3">
             <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
@@ -214,16 +214,16 @@ export default function Services() {
     <div className="min-h-screen bg-gray-50">
 
       {/* Hero Section */}
-      <section className="bg-primary text-white py-20">
+      <section className="bg-primary text-white py-20 px-8">
         <div className="container-padding">
           <div className="text-center max-w-4xl mx-auto">
          
-            <h1 className="text-5xl lg:text-6xl font-bold mb-6">
+            <h1 className="text-3xl lg:text-6xl font-bold mb-6">
               Comprehensive Learning
               <br />
               <span className="text-yellow-300">Support Services</span>
             </h1>
-            <p className="text-xl text-lightLavender mb-8 leading-relaxed">
+            <p className="sm:text-xl text-lg  text-lightLavender mb-8 leading-relaxed">
               From personal mentoring to university placement, we provide
               end-to-end support for your educational journey. Choose from our
               range of premium services designed to accelerate your success.
@@ -234,7 +234,7 @@ export default function Services() {
       </section>
 
       {/* Services Grid */}
-      <section className="py-20 px-20">
+      <section className="py-12 sm:py-20 sm:px-6 px-8">
         <div className="container-padding">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
@@ -302,7 +302,7 @@ export default function Services() {
       </section>
 
       {/* Support Features */}
-      <section className="py-20 px-20 bg-white">
+      <section className="py-12 sm:py-20 sm:px-6 px-8 bg-white">
         <div className="container-padding">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
@@ -335,7 +335,7 @@ export default function Services() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-primary text-white">
+      <section className="py-12 sm:py-20 sm:px-6 px-8 bg-primary text-white">
         <div className="container-padding text-center">
           <h2 className="text-4xl font-bold mb-6">
             Ready to Accelerate Your Learning?

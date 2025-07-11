@@ -26,15 +26,19 @@ const TestimonialSection = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-[#9B59B6] py-16 px-4 sm:px-6 lg:px-8 text-white">
+    <div className="py-12 sm:py-20 sm:px-6 px-8 min-h-screen bg-darkPurple  text-white">
       <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Transforming Visa Dreams into Reality
-          </h2>
-          <p className="text-white/90 mb-2">
-            SS Overseas provides full support in documentation, university selection, and visa filing.
-          </p>
+      <h1 className="text-4xl font-plein sm:w-2/4  lg:text-5xl font-bold leading-tight mb-6 text-white m-auto text-center" >
+        Transforming Visa Dreams into Reality
+      </h1>
+
+      <p className="text-center text-whiteś m-auto text-base mb-12 leading-relaxed w-full sm:w-1/2">
+      SS Overseas provides full support in documentation, university selection, and visa filing.
+      </p>
+        <div className="text-center">
+        
+        
+        
           <div className="w-24 h-1 bg-[#6A2C8B] mx-auto rounded-full"></div>
         </div>
 

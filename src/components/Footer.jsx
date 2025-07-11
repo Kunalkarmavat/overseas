@@ -3,8 +3,8 @@ import { GraduationCap } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className=" border-t bg-gray-900 py-12 text-gray-700">
-      <div className="container mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-10">
+    <footer className=" border-t bg-gray-900 py-12 sm:py-20 sm:px-6 px-8 text-gray-700">
+      <div className="container mx-auto text-gray-500   grid grid-cols-1 md:grid-cols-4 gap-10">
         {/* Brand Info */}
         <div>
           <div className="flex items-center gap-2 mb-2">
@@ -53,7 +53,7 @@ const Footer = () => {
       </div>
 
       <div className="text-center text-sm text-gray-500 mt-8">
-        &copy; {new Date().getFullYear()} EduGlobe. All rights reserved.
+        &copy; {new Date().getFullYear()} SS Overseas All rights reserved.
       </div>
     </footer>
   );

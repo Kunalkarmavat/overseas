@@ -40,28 +40,35 @@ const values = [
   },
 ];
 const CoreValuesSection = () => (
-  <section className="py-24 px-6  text-center">
+  <section className="py-12 sm:py-20 sm:px-6 px-8  text-center">
   
+  <h1 className="text-4xl font-plein sm:w-3/4 lg:text-5xl font-bold leading-tight mb-6 text-darkPurple m-auto">
+  Our Core Values 
+      </h1>
 
-    <h2 className="text-4xl font-bold text-purple-800 mb-4">Our Core Values</h2>
+      <p className="m-auto text-black text-base mb-12 leading-relaxed w-full sm:w-1/2">
+        Everything you need to plan, apply, and succeed in your study abroad journey.
+      </p>
 
-    <p className="text-gray-600 text-sm max-w-xl mx-auto mb-12">
-      These values shape our culture and define how we guide students through their educational journey abroad.
-    </p>
 
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-7xl mx-auto">
+
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-8xl mx-auto">
       {values.map((value, i) => (
         <div
           key={i}
-          className="group bg-white/60 backdrop-blur-xl border border-purple-100 hover:border-purple-600 hover:bg-purple-700 transition rounded-2xl shadow-xl p-6 text-left flex flex-col items-start hover:scale-105 transform duration-300"
+          className="group bg-lightLavender backdrop-blur-xl border border-purple-100 hover:border-purple-600 hover:bg-darkPurple transition rounded-2xl shadow-xl p-6 text-left flex flex-col items-start hover:scale-105 transform duration-300"
         >
           <div className="mb-4 p-3 bg-white rounded-full shadow group-hover:bg-white/20 transition">
             {value.icon}
           </div>
-          <h3 className="text-xl font-semibold text-purple-800 group-hover:text-white mb-2 transition">
-            {value.title}
-          </h3>
-          <p className="text-sm text-gray-600 group-hover:text-white/90 transition">{value.description}</p>
+       
+        
+          <h3 className="font-bold text-lg mb-2 text-gray-800 transition-colors duration-300 ease-in-out group-hover:text-white">
+              {value.title}
+            </h3>
+            <p className="text-sm text-gray-600 transition-colors duration-300 ease-in-out group-hover:text-purple-200">
+              {value.description}
+            </p>
         </div>
       ))}
     </div>

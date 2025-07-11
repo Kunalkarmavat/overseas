@@ -18,43 +18,7 @@ import {
   Search,
 } from "lucide-react";
 
-const Header = () => {
-  return (
-    <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-border shadow-sm">
-      <div className="container-padding">
-        <div className="flex items-center justify-between h-16">
-          <Link to="/" className="flex items-center space-x-3">
-            <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-sm">Z</span>
-            </div>
-            <span className="text-xl font-bold text-primary">Zisaa</span>
-          </Link>
 
-          <nav className="hidden md:flex items-center space-x-8">
-            {["Home", "Services", "Courses", "Universities", "About Us"].map((text, i) => (
-              <Link
-                key={i}
-                to={`/${text.toLowerCase().replace(" ", "")}`}
-                className={`text-gray-600 hover:text-primary transition-colors ${
-                  text === "Courses" ? "text-primary font-semibold border-b-2 border-primary pb-1" : ""
-                }`}
-              >
-                {text}
-              </Link>
-            ))}
-          </nav>
-
-          <Button
-            size="sm"
-            className="bg-yellow-400 hover:bg-yellow-500 text-black font-semibold px-6 py-2 rounded-full"
-          >
-            Log In
-          </Button>
-        </div>
-      </div>
-    </header>
-  );
-};
 
 export default function Courses() {
   const [selectedCategory, setSelectedCategory] = useState("All");
@@ -180,15 +144,15 @@ export default function Courses() {
   ];
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-gray-50 ">
       {/* Hero */}
-      <section className=" bg-primary text-white py-20">
+      <section className=" bg-primary text-white py-12 sm:py-20 sm:px-6 px-8">
         <div className="container-padding text-center max-w-4xl mx-auto">
-          <h1 className="text-5xl lg:text-6xl font-bold mb-6">
+          <h1 className="text-4xl lg:text-6xl font-bold mb-6">
             Learn from the <br />
             <span className="text-yellow-300">Best Instructors</span>
           </h1>
-          <p className="text-xl text-teal-100 mb-8 leading-relaxed">
+          <p className="sm:text-xl text-sm mb-8 leading-relaxed">
             Access high-quality courses from industry experts. Master new skills, advance your career, and achieve your learning goals.
           </p>
           <div className="max-w-2xl mx-auto mb-8">
@@ -216,7 +180,7 @@ export default function Courses() {
       </section>
 
       {/* Stats */}
-      <section className="py-16 bg-white">
+      <section className="py-12 sm:py-20 sm:px-6 px-8 bg-white">
         <div className="container-padding grid grid-cols-2 lg:grid-cols-4 gap-8">
           {stats.map((stat, index) => (
             <div key={index} className="text-center">
@@ -231,7 +195,7 @@ export default function Courses() {
       </section>
 
       {/* Category Filters */}
-      <section className="py-8 bg-white border-b">
+      <section className="py-12 sm:py-20 sm:px-6 px-8 bg-white border-b">
         <div className="container-padding flex flex-wrap gap-4 justify-center">
           {categories.map((category) => (
             <Button
@@ -248,7 +212,7 @@ export default function Courses() {
       </section>
 
       {/* Course Cards */}
-      <section className="py-20 px-20">
+      <section className="py-12 sm:py-20 sm:px-6 px-8">
         <div className="container-padding">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">Featured Courses</h2>
@@ -327,10 +291,10 @@ export default function Courses() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 bg-primary text-white text-center">
+      <section className="py-12 sm:py-20 sm:px-6 px-8 bg-primary text-white text-center">
         <div className="container-padding">
-          <h2 className="text-4xl font-bold mb-6">Ready to Start Your Learning Journey?</h2>
-          <p className="text-xl text-teal-100 mb-8 max-w-2xl mx-auto">
+          <h2 className="text-3xl sm:text-4xl font-bold mb-6">Ready to Start Your Learning Journey?</h2>
+          <p className="text-sm sm:text-xl text-teal-100 mb-8 max-w-2xl mx-auto">
             Join thousands of students who have transformed their careers through our courses and expert instruction.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

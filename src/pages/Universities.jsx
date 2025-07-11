@@ -80,18 +80,18 @@ export default function Universities() {
   return (
     <div className="  to-blue-50  text-gray-800">
       {/* Hero */}
-      <section className="    text-center bg-primary">
-      <div className="max-w-4xl mx-auto px-4 py-20 md:px-8 text-center">
+      <section className="  py-12 sm:py-20 sm:px-6 px-8  text-center bg-primary">
+      <div className="max-w-4xl mx-auto  text-center">
       <h2 className="text-4xl md:text-6xl  font-bold mb-4">
         
         </h2>
 
-        <h1 className="text-5xl text-white lg:text-6xl font-bold mb-6">
+        <h1 className="text-3xl text-white lg:text-6xl font-bold mb-6">
         Explore Top <span className="text-yellow-300">Universities</span>{" "}
         Worldwide
               <br />
             </h1>
-        <p className="text-lg text-white mb-8 max-w-2xl mx-auto">
+        <p className="sm:text-lg text-sm text-white mb-8 max-w-2xl mx-auto">
         From personal mentoring to university placement, we provide
               end-to-end support for your educational journey. Choose from our
               range of premium services designed to accelerate your success.
@@ -147,7 +147,7 @@ export default function Universities() {
       </section>
 
       {/* University Cards */}
-      <section className="container mx-auto py-20 ">
+      <section className="container mx-auto py-12 sm:py-20 sm:px-6 px-8">
         <h3 className="text-2xl font-bold mb-4">Featured Universities</h3>
         <p className="mb-6 text-gray-500">
           {filteredUniversities.length} universit
@@ -232,7 +232,7 @@ export default function Universities() {
       </section>
 
       {/* CTA */}
-      <section className="bg-primary text-white py-16 text-center">
+      <section className="bg-primary text-white text-center py-12 sm:py-20 sm:px-6 px-8">
         <h3 className="text-3xl font-bold mb-2">
           Ready to Start Your Journey?
         </h3>

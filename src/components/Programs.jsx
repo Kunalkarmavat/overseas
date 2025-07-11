@@ -22,13 +22,18 @@ img: "https://www.ssoverseas.in/assets/img/image/page-service-img1.png"
 
 const Programs = () => {
   return (
-    <section className="py-20 px-6 bg-gray-50 text-center">
-      <p className="text-sm font-semibold text-purple-700 uppercase tracking-wider mb-2">
-        Abroad Programs
+    <section className="py-12 sm:py-20 sm:px-6 px-8 bg-gray-50 text-center">
+   
+
+      <h1 className="text-4xl m-auto font-plein sm:w-3/4 lg:text-5xl font-bold leading-tight mb-6 text-darkPurple">
+  Abroad Programs
+      </h1>
+
+      <p className="text-black  m-auto text-base mb-12 leading-relaxed w-full sm:w-1/2">
+        Everything you need to plan, apply, and succeed in your study abroad journey.
       </p>
-      <h2 className="text-3xl font-bold text-gray-800 mb-12">
-        Navigating Abroad Applications Made Easy
-      </h2>
+
+
 
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
         {programs.map(({ title, desc, img }, i) => (

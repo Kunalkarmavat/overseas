@@ -42,12 +42,12 @@ const services = [
 
 const OurServices = () => {
   return (
-    <section className="pt-8 sm:px-0 text-center bg-white flex flex-col items-center justify-center">
-      <h1 className="text-4xl sm:w-3/4 lg:text-5xl font-bold leading-tight mb-6 text-darkPurple">
+    <section className=" py-12 sm:py-20 sm:px-6 px-8 text-center  flex flex-col items-center justify-center">
+      <h1 className="text-4xl mb-6 font-plein sm:w-3/4 lg:text-5xl font-bold leading-tight text-darkPurple">
         Our Services
       </h1>
 
-      <p className="text-black text-base mb-16 leading-relaxed w-full sm:w-1/2">
+      <p className="text-black text-base mb-12 leading-relaxed w-full sm:w-1/2">
         Everything you need to plan, apply, and succeed in your study abroad journey.
       </p>
 
@@ -60,8 +60,15 @@ const OurServices = () => {
             <div className={`w-12 h-12 flex items-center justify-center rounded-full mb-4 ${service.color}`}>
               {service.icon}
             </div>
-            <h3 className="text-lg font-semibold text-gray-900 mb-2">{service.title}</h3>
-            <p className="text-sm text-gray-600 mb-4">{service.description}</p>
+
+            <h3 className="font-bold text-lg mb-2 text-gray-800 transition-colors duration-300 ease-in-out group-hover:text-darkPurple">
+              {service.title}
+            </h3>
+            <p className="text-sm text-gray-600 transition-colors duration-300 ease-in-out group-hover:text-black">
+              {service.description}
+            </p>
+
+     
             <a
               href="#"
               className="text-blue-600 text-sm font-medium hover:underline flex items-center gap-1"

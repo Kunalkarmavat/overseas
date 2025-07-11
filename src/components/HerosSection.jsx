@@ -9,7 +9,7 @@ const HeroSection = () => {
   return (
 
 <section
-  className="relative overflow-hidden min-h-screen px-20 pt-12 sm:pt-0 "
+  className="relative overflow-hidden min-h-screen px-8 sm:px-20 pt-12 sm:pt-0 "
   
 >
 
@@ -54,7 +54,7 @@ const HeroSection = () => {
             />{" "}
             {/* Reduced width from 102rem to 90rem */}
             {/* Floating Stats */}
-            <div className="absolute top-4 sm:top-20 sm:right-12 -right-10 bg-white/90  border-[1px] border-darkPurple rounded-xl p-3 shadow-lg animate-bounce">
+            <div className="absolute top-4 sm:top-20 sm:right-12 -right-2 bg-white/90  border-[1px] border-darkPurple rounded-xl p-3 shadow-lg animate-bounce">
               <div className="flex items-center space-x-3">
                 <div className="w-7 h-7 bg-teal-100 rounded-lg flex items-center justify-center">
                   <BookOpen className="w-4 h-4 text-teal-600" />
@@ -65,7 +65,7 @@ const HeroSection = () => {
                 </div>
               </div>
             </div>
-            <div className="absolute top-20  sm:top-44  sm:left-8 -left-12 bg-white/90 backdrop-blur-sm rounded-xl p-3 shadow-lg animate-bounce border-[1px] border-darkPurple ">
+            <div className="absolute top-20  sm:top-44  sm:left-8 -left-2 bg-white/90 backdrop-blur-sm rounded-xl p-3 shadow-lg animate-bounce border-[1px] border-darkPurple ">
               <div className=" flex items-center space-x-3">
                 <div className="w-7 h-7 bg-blue-100 rounded-lg flex items-center justify-center">
                   <Users className="w-4 h-4 text-blue-600" />
@@ -77,7 +77,7 @@ const HeroSection = () => {
               </div>
             </div>
             <div
-              className="absolute bottom-4 sm:bottom-32 -right-10 sm:right-4 bg-white/90 backdrop-blur-sm rounded-xl p-3 shadow-lg animate-bounce "
+              className="absolute border-[1px] border-darkPurple  bottom-4 sm:bottom-32 -right-2 sm:right-4 bg-white/90 backdrop-blur-sm rounded-xl p-3 shadow-lg animate-bounce "
               style={{ animationDelay: "0.5s" }}
             >
               <div className="flex items-center space-x-3 ">
